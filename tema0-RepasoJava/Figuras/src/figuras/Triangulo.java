@@ -8,6 +8,16 @@ package figuras;
  *
  * @author Dell
  */
-public class Triangulo {
+public class Triangulo implements IFigura{
+
+    @Override
+    public int area() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int perimetro() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
