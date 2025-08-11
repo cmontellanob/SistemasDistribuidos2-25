@@ -7,8 +7,6 @@ package crudpersonas;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -23,7 +21,7 @@ public class PersonaDAO {
             this.conexion = DriverManager.getConnection(url, usuario, password);
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
-            //Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+        
         }
     }
 
@@ -41,7 +39,7 @@ public class PersonaDAO {
 
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
-            //Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+          
         }
 
     }
@@ -55,17 +53,41 @@ public class PersonaDAO {
             Statement instruccion = conexion.createStatement();
             ResultSet resultado = instruccion.executeQuery(sql);
             while (resultado.next()) {
-                Persona p = new Persona(resultado.getInt("id"), resultado.getString("nombres"),
+                Persona p = new Persona(resultado.getInt("id"), resultado.getString("nombre"),
                         resultado.getString("apellidos"), resultado.getInt("edad"), resultado.getString("nro_carnet"));
                 auxiliar.add(p);
             }
 
-            
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
-            //Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+          
         }
         return auxiliar;
     }
-    
+
+    public void editar(Persona persona) {
+        String sql = "UPDATE personas SET nombres=?, apellidos=?, edad=?, nro_carnet=? WHERE id=?";
+        try {
+            PreparedStatement instruccion = conexion.prepareStatement(sql);
+            instruccion.setString(1, persona.getNombre());
+            instruccion.setString(2, persona.getApellidos());
+            instruccion.setInt(3, persona.getEdad());
+            instruccion.setString(4, persona.getNumerocarnet());
+            instruccion.setInt(5, persona.getId());
+            instruccion.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.print(ex.getMessage());
+        }
+    }
+
+    public void eliminar(int id) {
+        String sql = "DELETE FROM personas WHERE id=?";
+        try {
+            PreparedStatement instruccion = conexion.prepareStatement(sql);
+            instruccion.setInt(1, id);
+            instruccion.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.print(ex.getMessage());
+        }
+    }
 }
