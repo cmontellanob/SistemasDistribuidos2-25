@@ -13,6 +13,6 @@ import java.rmi.RemoteException;
  */
 public interface IHola extends Remote {
     
-    public String saludo() throws RemoteException;;
+    public String saludo() throws RemoteException;
     
 }
