@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\usfx\\2-2025\\SistemasDistribuidos2-25\\06-10 SOAP\\Operaciones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3408EE64-6F7D-49A7-E467-85E7F7A74637}|D:\\usfx\\2-2025\\SistemasDistribuidos2-25\\06-10 SOAP\\Operaciones\\Operaciones|d:\\usfx\\2-2025\\sistemasdistribuidos2-25\\06-10 soap\\operaciones\\operaciones\\app_code\\basicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3408EE64-6F7D-49A7-E467-85E7F7A74637}|D:\\usfx\\2-2025\\SistemasDistribuidos2-25\\06-10 SOAP\\Operaciones\\Operaciones|solutionrelative:operaciones\\app_code\\basicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Basicas.cs",
+              "DocumentMoniker": "D:\\usfx\\2-2025\\SistemasDistribuidos2-25\\06-10 SOAP\\Operaciones\\Operaciones\\App_Code\\Basicas.cs",
+              "RelativeDocumentMoniker": "Operaciones\\App_Code\\Basicas.cs",
+              "ToolTip": "D:\\usfx\\2-2025\\SistemasDistribuidos2-25\\06-10 SOAP\\Operaciones\\Operaciones\\App_Code\\Basicas.cs",
+              "RelativeToolTip": "Operaciones\\App_Code\\Basicas.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T19:20:58.076Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
