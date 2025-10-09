@@ -1,7 +1,6 @@
-# =========================
-# ARCHIVOS GENERALES
-# =========================
-# Archivos temporales o de sistema
+# =====================================
+# ARCHIVOS TEMPORALES Y DE SISTEMA
+# =====================================
 *.log
 *.tmp
 *.bak
@@ -9,100 +8,93 @@
 *.swo
 *.DS_Store
 Thumbs.db
-
-# Archivos de entorno o configuración local
-.env
-*.user
-*.suo
-*.userprefs
 *.orig
 *.rej
+*.lock
+*.pid
 
-# Carpetas de compilación comunes
-bin/
-obj/
-out/
-build/
-dist/
-target/
-release/
-debug/
-publish/
-
-# =========================
-# C# / .NET
-# =========================
-# Archivos de compilación
-*.dll
-*.exe
-*.pdb
-*.cache
-*.mdb
-
-# Archivos de paquete NuGet
-*.nupkg
-*.snupkg
-.nuget/
-packages/
-project.lock.json
-project.fragment.lock.json
-
-# Archivos de cobertura y test
-TestResult*/
-*.coverage
-*.coveragexml
-*.codecoverage
-
-# =========================
-# JAVA
-# =========================
-# Archivos compilados de Java
-*.class
-
-# Dependencias locales (no versionadas)
-*.jar
-*.war
-*.ear
-
-# Carpetas de herramientas y compiladores
-.gradle/
-.gradle-cache/
-.mvn/
-.settings/
-.idea/
+# =====================================
+# ENTORNOS DE DESARROLLO
+# =====================================
+# Visual Studio / VS Code / IntelliJ / Eclipse
 .vscode/
-*.iml
-
-# =========================
-# SISTEMAS DE COMPILACIÓN
-# =========================
-# Maven
-target/
-
-# Gradle
-.gradle/
-build/
-
-# Ant
-build/
-
-# =========================
-# SISTEMAS DE CONTROL / CI
-# =========================
-# Logs y cachés
-*.log
-.cache/
-.tmp/
-logs/
-
-# =========================
-# OTROS EDITORES
-# =========================
-# Visual Studio Code
-.vscode/
-
-# JetBrains / IntelliJ / Rider
 .idea/
 *.iml
 *.ipr
 *.iws
+*.user
+*.suo
+*.userprefs
+*.vs/
+*.vscode/
+
+# =====================================
+# C# / .NET
+# =====================================
+# Carpetas comunes de compilación
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/publish/
+
+# Archivos compilados
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+
+# Paquetes NuGet
+*.nupkg
+*.snupkg
+**/packages/
+.nuget/
+
+# Archivos de pruebas o cobertura
+**/TestResult*/
+*.coverage
+*.coveragexml
+*.codecoverage
+
+# =====================================
+# JAVA
+# =====================================
+# Carpetas de compilación
+**/target/
+**/out/
+**/build/
+**/dist/
+
+# Archivos compilados
+*.class
+*.jar
+*.war
+*.ear
+
+# Herramientas de compilación
+.gradle/
+.mvn/
+.gradle-cache/
+.settings/
+.classpath
+.project
+
+# =====================================
+# LOGS / TEMPORALES
+# =====================================
+**/logs/
+**/tmp/
+**/cache/
+**/temp/
+
+# =====================================
+# SISTEMAS DE CONTROL / CI
+# =====================================
+*.coverage
+*.codecov
+*.gcov
+*.gcda
+*.gcno
+*.lcov
+*.sonar/
