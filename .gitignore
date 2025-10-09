@@ -1,57 +1,108 @@
-# ------------------------------------
-# 1. C# / .NET (Visual Studio Community)
-# ------------------------------------
-# Directorios de compilación y temporales
-[Bb]in/             # Ignora 'bin' o 'Bin' en cualquier nivel
-[Oo]bj/             # Ignora 'obj' o 'Obj' en cualquier nivel
-packages/           # Directorio de paquetes NuGet (si no están centralizados)
-TestResults/        # Resultados de pruebas
-
-# Archivos y directorios de Visual Studio
-.vs/                # Directorio de datos de usuario de Visual Studio (¡MUY IMPORTANTE!)
-*.suo               # Archivo de opciones de solución de Visual Studio
-*.user              # Archivos de configuración de usuario de proyecto
-*.log               # Archivos de registro
-
-# Archivos de compilación (.NET)
-*.dll               # Librerías compiladas
-*.exe               # Ejecutables compilados
-*.pdb               # Archivos de símbolos de depuración
-*.bak               # Archivos de copia de seguridad
-
-# Archivos de configuración de usuario específicos de proyecto/solución
-**/*.pubxml
-**/*.userprefs
-**/*.local
-*.sln.docstates
-*.v12.suo
-*.v14.suo
-*.v15.suo
-*.v16.suo
-*.v17.suo
-
----
-
-# ------------------------------------
-# 2. JAVA (NetBeans)
-# ------------------------------------
-# Archivos de bytecode
-*.class             # Clases compiladas
-*.jar               # Paquetes Java
-*.war               # Paquetes web
-*.ear               # Paquetes empresariales
-*.ser               # Archivos serializados
-
-# Directorios de compilación (Maven, Gradle, etc.)
-target/             # Directorio de salida de Maven
-build/              # Directorio de salida de Gradle
-
-# Archivos y directorios de NetBeans
-nbproject/          # Archivos de proyecto de NetBeans
-/dist/              # Directorio de distribución de NetBeans
-/build/             # Directorio de compilación de NetBeans (si no usas Gradle/Maven)
-/manifest.mf
-!/build/web/        # Excluye la carpeta 'web' dentro de 'build' si es una aplicación web (opcional)
-
-# Archivos de log
+# =========================
+# ARCHIVOS GENERALES
+# =========================
+# Archivos temporales o de sistema
 *.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Archivos de entorno o configuración local
+.env
+*.user
+*.suo
+*.userprefs
+*.orig
+*.rej
+
+# Carpetas de compilación comunes
+bin/
+obj/
+out/
+build/
+dist/
+target/
+release/
+debug/
+publish/
+
+# =========================
+# C# / .NET
+# =========================
+# Archivos de compilación
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+
+# Archivos de paquete NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Archivos de cobertura y test
+TestResult*/
+*.coverage
+*.coveragexml
+*.codecoverage
+
+# =========================
+# JAVA
+# =========================
+# Archivos compilados de Java
+*.class
+
+# Dependencias locales (no versionadas)
+*.jar
+*.war
+*.ear
+
+# Carpetas de herramientas y compiladores
+.gradle/
+.gradle-cache/
+.mvn/
+.settings/
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# SISTEMAS DE COMPILACIÓN
+# =========================
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Ant
+build/
+
+# =========================
+# SISTEMAS DE CONTROL / CI
+# =========================
+# Logs y cachés
+*.log
+.cache/
+.tmp/
+logs/
+
+# =========================
+# OTROS EDITORES
+# =========================
+# Visual Studio Code
+.vscode/
+
+# JetBrains / IntelliJ / Rider
+.idea/
+*.iml
+*.ipr
+*.iws
