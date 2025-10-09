@@ -1,84 +1,51 @@
 # ------------------------------------
-# 1. C# / .NET COMÚN (Incluye subdirectorios implícitamente)
+# 1. C# / .NET (Recursivo en cualquier subdirectorio)
 # ------------------------------------
-## Directorios binarios
-[Bb]in/
-[Oo]bj/
+# Directorios de compilación y temporales (.NET)
+[Bb]in/             # Ignora 'bin' o 'Bin' en cualquier nivel
+[Oo]bj/             # Ignora 'obj' o 'Obj' en cualquier nivel
+packages/           # Directorio de paquetes NuGet (si no están centralizados)
+TestResults/        # Resultados de pruebas
+.vs/                # Directorio de Visual Studio (datos de usuario)
+.idea/              # Directorio de Rider/JetBrains (datos de usuario)
 
-# Paquetes de NuGet y dependencias
-packages/
+# Archivos de compilación y usuario (.NET)
+*.dll               # Librerías compiladas
+*.exe               # Ejecutables compilados
+*.pdb               # Archivos de símbolos de depuración
+*.suo               # Archivo de opciones de solución de Visual Studio
+*.user              # Archivos de configuración de usuario
+*.log               # Archivos de registro
 
-# Archivos de compilación y temporales
-*.dll
-*.exe
-*.pdb
-*.suo
-*.user
-*.bak
-*.ncb
-*.sbr
-*.obj
-*.idb
-*.lib
-*.tlb
-*.tlh
-*.tmp
-*.vspscc
-*.vssscc
-
-# Directorios de pruebas y Visual Studio
-TestResults/
-.vs/
-.idea/
-
-# Archivos de la solución y usuario
+# Archivos de configuración de usuario específicos de proyecto/solución
+**/*.pubxml
+**/*.userprefs
+**/*.local
 *.sln.docstates
 *.v12.suo
 *.v14.suo
 *.v15.suo
 *.v16.suo
 *.v17.suo
-*.csproj.user
-*.fsproj.user
-*.vbproj.user
-**/*.pubxml
-**/*.userprefs
-**/*.local
-**/*.log
+
+---
 
 # ------------------------------------
-# 2. IGNORAR ARCHIVOS DE JAVA (Incluye subdirectorios recursivamente)
+# 2. JAVA (Recursivo en cualquier subdirectorio)
 # ------------------------------------
 # Archivos de bytecode
-*.class
-*.jar
-*.war
-*.ear
-*.ser
-*.lock
+*.class             # Clases compiladas
+*.jar               # Paquetes Java
+*.war               # Paquetes web
+*.ear               # Paquetes empresariales
+*.ser               # Archivos serializados
 
-# Directorios de compilación y salida (Maven, Gradle, IDEs)
-# Maven
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-check-report.html
-dependency-check-report.xml
+# Directorios de compilación (Maven, Gradle, etc.)
+target/             # Directorio de salida de Maven (ignorado en cualquier nivel)
+build/              # Directorio de salida de Gradle (ignorado en cualquier nivel)
 
-# Gradle
-.gradle/
-build/
-
-# IDEs de Java (IntelliJ IDEA, Eclipse)
-.idea/
-.project
-.classpath
-.settings/
-bin/
-
-# Logs y otros archivos temporales
-*.log
-!**/src/**/*.log # Excepción si tienes logs dentro de src
+# Archivos y directorios de IDE/Herramientas de Java
+.gradle/            # Archivos de caché de Gradle
+.classpath          # Archivos de configuración de Eclipse
+.project            # Archivos de configuración de Eclipse
+.settings/          # Directorios de configuración de Eclipse
