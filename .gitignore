@@ -98,3 +98,6 @@ Thumbs.db
 *.gcno
 *.lcov
 *.sonar/
+/13-10 SOAP Java/ClienteOperaciones/nbproject/private/
+/13-10 SOAP Java/JavaApplication14/nbproject/private/
+/20-10 Cliete Rest/java/ConsumirPersona/nbproject/private/
