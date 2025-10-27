@@ -1,6 +1,6 @@
 const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLList, GraphQLNonNull } = require('graphql');
-const { Agenda } = require('./database'); // Asegúrate de que el modelo Agenda esté correctamente exportado desde tu archivo de base de datos
-
+const  Agenda  = require('./database'); // Asegúrate de que el modelo Agenda esté correctamente exportado desde tu archivo de base de datos
+console.log(Agenda);
 // Definición del tipo Agenda en GraphQL
 const AgendaType = new GraphQLObjectType({
   name: 'Agenda',

@@ -47,5 +47,9 @@ const Agenda = sequelize.define('Agenda', {
   updatedAt: 'updated_at'
 });
 
+sequelize.sync({ alter: true }) // crea o actualiza la tabla
+  .then(() => console.log(' Tabla Agenda lista'))
+  .catch(err => console.error(' Error al sincronizar:', err));
+
 module.exports = Agenda;
 

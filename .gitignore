@@ -101,3 +101,15 @@ Thumbs.db
 /13-10 SOAP Java/ClienteOperaciones/nbproject/private/
 /13-10 SOAP Java/JavaApplication14/nbproject/private/
 /20-10 Cliete Rest/java/ConsumirPersona/nbproject/private/
+
+# =====================================
+# NODE.JS / JAVASCRIPT
+# =====================================
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
